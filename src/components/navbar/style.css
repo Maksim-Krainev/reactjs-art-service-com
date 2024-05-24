@@ -1,0 +1,136 @@
+/* Nav */
+
+.nav {
+	padding: 20px;
+	background-color: var(--nav-bg);
+	border-bottom: 1px solid var(--nav-border);
+	color: var(--nav-text);
+	letter-spacing: normal;
+}
+
+.nav-row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+	margin-right: auto;
+	color: var(--nav-text);
+	font-size: 24px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-list__link {
+	color: var(--nav-text);
+	transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--active {
+	position: relative;
+}
+
+.nav-list__link--active::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+}
+
+.nav-logo {
+    width: 150px;
+    height: auto;
+}
+
+.nav-menu-pic{
+	display: none;
+}
+
+.nav-list__item a{ 
+	color:  white;
+}
+
+.nav-logo-phone:hover{
+    animation: shake 0.5s infinite; 
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    75% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(2px);
+    }
+  }
+
+@media (min-width: 769px) {
+
+    .nav-logo {
+        width: 200px;
+    }
+	
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        width: 100px;
+    }
+	.nav-list {
+        display: none;
+    }
+	.nav-menu-pic{
+		display: block;
+	}
+    .nav-list--open {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+        display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--nav-border);
+		font-size: 30px;
+		z-index: 10000;
+    }
+}
