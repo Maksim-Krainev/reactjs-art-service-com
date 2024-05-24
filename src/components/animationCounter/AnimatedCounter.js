@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import "./style.css";
-
 
 const Counter = ({ icon, target, label }) => {
   const [count, setCount] = useState(0);
@@ -61,13 +61,15 @@ const Counter = ({ icon, target, label }) => {
 };
 
 const AnimatedCounter = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="counters-section">
         <div className="counters-container">
-          <Counter  target={1000} label="Нас оцінили" />
-          <Counter  target={10000} label="Ми поремонтували" />
-          <Counter  target={5000} label="Ми сподобались" />
+          <Counter target={8312} label={t('counters.rated_us')} />
+          <Counter target={9267} label={t('counters.repaired')} />
+          <Counter target={7415} label={t('counters.liked_us')} />
         </div>
       </section>
     </div>

@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
-import NavLogo from "../../img/logo.png"
-import NavPhoneBtn from "./../../img/icons/phone-svgrepo-com.svg"
-import NavMenuIcon from "../../img/icons/menu-svgrepo-com.svg"
+import NavLogo from "../../img/logo02.png";
+import NavPhoneBtn from "./../../img/icons/phone-svgrepo-com.svg";
+import NavMenuIcon from "../../img/icons/menu-svgrepo-com.svg";
 import './style.css';
+import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
 
 const Navbar = () => {
+    const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false); 
 
     const activeLink = 'nav-list__link nav-list__link--active';
@@ -25,14 +28,14 @@ const Navbar = () => {
             <div className="container">
                 <div className="nav-row">
                     <NavLink to="/" className="logo">
-                        <img src={NavLogo} className='nav-logo' alt='Лого' />
+                        <img src={NavLogo} className='nav-logo' alt={t('logo_alt')} />
                     </NavLink>
 
                     <BtnDarkMode />
 
                     <div className="menu-toggle" onClick={toggleMenu}>
-						<img src={NavMenuIcon} className='nav-menu-pic' alt='Меню кнопка' width={25}/>
-					</div>
+                        <img src={NavMenuIcon} className='nav-menu-pic' alt={t('menu_button_alt')} width={25}/>
+                    </div>
 
                     <ul className={`nav-list ${menuOpen ? 'nav-list--open' : ''}`}>
                         <li className="nav-list__item">
@@ -43,7 +46,7 @@ const Navbar = () => {
                                 }
                                 onClick={closeMenu} 
                             >
-                                Головна
+                                {t('home')}
                             </NavLink>
                         </li>
 
@@ -55,13 +58,16 @@ const Navbar = () => {
                                 }
                                 onClick={closeMenu} 
                             >
-                                Про нас
+                                {t('about')}
                             </NavLink>
                         </li>
                         <li className="nav-list__item">
-                            <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center' }}> <img src={NavPhoneBtn} className='nav-logo-phone' alt='Лого' width={15} style={{ marginRight: '5px' }}/> +380507685111</a>
+                            <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center' }}>
+                                <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={15} style={{ marginRight: '5px' }}/> {t('phone_number')}
+                            </a>
                         </li>
                     </ul>
+                    <LanguageSwitcher />
                 </div>
             </div>
         </nav>

@@ -1,0 +1,17 @@
+ul {
+    direction: none;
+}
+.button.primary {
+    background-color: #e0dd22;
+    color: #fff;
+}
+
+.button.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Стилі для кнопок з ефектом при наведенні */
+.button:hover {
+    background-color: #b3a700;
+}
