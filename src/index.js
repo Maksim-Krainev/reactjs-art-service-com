@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import App from './App';
-import './i18n';
+import Loader from './pages/Loader'; 
+import './i18n'; 
 
+const Root = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); 
+  }, []); 
+
+  return (
+    <React.StrictMode>
+      {isLoading ? <Loader /> : <App />} 
+    </React.StrictMode>
+  );
+};
+
+ReactDOM.render(<Root />, document.getElementById('root'));
