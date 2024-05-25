@@ -2,10 +2,10 @@
 
 function Loader() {
     return(
-        <div class="container">
-	        <div class="loader"></div>
-	        <div class="loader"></div>
-	        <div class="loader"></div>
+        <div className="container">
+	        <div className="loader"></div>
+	        <div className="loader"></div>
+	        <div className="loader"></div>
         </div>
     );
 

@@ -316,7 +316,10 @@ body {
 		width: 28px;
 	}
 }
-
+.App{
+	min-width: 100vw;
+	margin: 0 auto;
+}
 .loader {
 	position: absolute;
 	top: 50%;
