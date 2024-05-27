@@ -4,6 +4,7 @@ import App from './App';
 import Loader from './pages/Loader'; 
 import './i18n'; 
 
+
 const Root = () => {
   const [isLoading, setIsLoading] = useState(true);
 

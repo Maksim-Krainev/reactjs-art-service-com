@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./style.css";
-import footerLogo from "./../../img/logo.png";
+import footerLogo from "./../../img/logo02.png";
 import visaCard from "./../../img/icons/visa-classic-svgrepo-com.svg";
 import masterCard from "./../../img/icons/mastercard-full-svgrepo-com.svg";
 

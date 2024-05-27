@@ -6,11 +6,17 @@ import AnimatedCounter from "./../components/animationCounter/AnimatedCounter";
 import Projects from './Projects';
 import Timeline from '../components/timeLine/TimeLine';
 
+import { Helmet } from 'react-helmet';
+
 const Home = () => {
     const { t } = useTranslation();
     
     return (
         <>
+             <Helmet>
+                <title>{t('home_title')}</title>
+                <meta name="description" content={t('home_description')} />
+            </Helmet>
             <Header />
             <main className="section">
                 <div className="container">

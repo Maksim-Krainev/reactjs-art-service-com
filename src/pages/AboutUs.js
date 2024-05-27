@@ -1,9 +1,17 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 const AboutUs = () => {
-    return(
+    const { t } = useTranslation();
+
+    return (
         <>
-        <h1>
-            Інформаційна сторінка
-        </h1>
+            <Helmet>
+                <title>{t('about_us_title')}</title>
+                <meta name="description" content={t('about_us_description')} />
+            </Helmet>
+            <h1>{t('about_us')}</h1>
         </>
     );
 }

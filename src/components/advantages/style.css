@@ -26,9 +26,9 @@ p {
 }
 
 .advantage{
-    
+    flex-grow: 1;
     margin: 20px;
-    padding: 40px;
+    padding: 15px;
     border-radius: 4px;
     text-align: center;
     -webkit-box-flex: 1;
@@ -42,18 +42,19 @@ p {
     transition: all 0.3s ease;
     min-width: 120px;
     min-height: 120px;
+    height: 375px;
 }
 
 .advantage h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    margin: 1rem 0 0.6rem;
+    margin: 1rem 0 0.3rem;
 }
 
 .advantage p {
     font-size: 0.9rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     line-height: 1.5;
   }
 

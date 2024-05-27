@@ -10,7 +10,7 @@ import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
 
 const Navbar = () => {
     const { t } = useTranslation();
-    const [menuOpen, setMenuOpen] = useState(false); 
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const activeLink = 'nav-list__link nav-list__link--active';
     const normalLink = 'nav-list__link';
@@ -38,35 +38,49 @@ const Navbar = () => {
                     </div>
 
                     <ul className={`nav-list ${menuOpen ? 'nav-list--open' : ''}`}>
-                        <li className="nav-list__item">
-                            <NavLink
-                                to="/"
-                                className={({ isActive }) =>
-                                    isActive ? activeLink : normalLink
-                                }
-                                onClick={closeMenu} 
-                            >
-                                {t('home')}
-                            </NavLink>
-                        </li>
+                    <li className="nav-list__item nav-list__item-phone ">
+                                            <NavLink
+                                                to="/repair_computer"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('repair_computers')}
+                                            </NavLink>
+                                        </li>
 
-                        <li className="nav-list__item">
-                            <NavLink
-                                to="/about"
-                                className={({ isActive }) =>
-                                    isActive ? activeLink : normalLink
-                                }
-                                onClick={closeMenu} 
-                            >
-                                {t('about')}
-                            </NavLink>
-                        </li>
+                                        <li className="nav-list__item nav-list__item-phone">
+                                            <NavLink
+                                                to="/repair_phone"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('repair_phones')}
+                                            </NavLink>
+                                        </li>
+
+                                        <li className="nav-list__item nav-list__item-phone">
+                                            <NavLink
+                                                to="/repair_smartphones"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('repair_smartphones')}
+                                            </NavLink>
+                                        </li>
+
                         <li className="nav-list__item">
                             <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center' }}>
                                 <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={15} style={{ marginRight: '5px' }}/> {t('phone_number')}
                             </a>
                         </li>
                     </ul>
+
                     <LanguageSwitcher />
                 </div>
             </div>
