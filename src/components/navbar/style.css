@@ -98,21 +98,58 @@
 
 .nav-sublist {
     display: none;
-	background-color: var(--nav-bg); 
+	  background-color: var(--nav-bg); 
     padding: 10px; 
     border-radius: 5px; 
     position: absolute;
+    height: 100vh;
     top: 60%; 
     z-index: 1000;
 }
 
-.nav-list__item:hover .nav-sublist {
-    display: block;	
+.nav-list__item-mobile {
+  display: none; /* Сховати для десктопної версії */
 }
 
+.nav-list__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-.nav-list__item-phone{
-	
+.nav-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Новий клас для мобільних іконок */
+.nav-mobile-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  display: none;
+}
+
+.nav-mobile-icons--open {
+  display: flex;
+}
+
+.nav-mobile-icon-button,
+.nav-mobile-icon-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list__item-mobile {
+  display: none; 
 }
 
   @keyframes shake {
@@ -173,4 +210,27 @@
     .nav-list__item-phone {
         display: block; 
     }
+
+    .nav-list__item-mobile {
+      display: block;
+  }
+
+  .pk_phone{
+    display: none;
+  }
+  .nav-list__item {
+    margin: 10px 0;
 }
+
+  .nav-list__item-mobile {
+    display: block;
+}
+
+.nav-menu-pic, .nav-close-pic {
+    cursor: pointer;
+}
+
+.nav-mobile-icons {
+    display: flex;
+}
+  }
