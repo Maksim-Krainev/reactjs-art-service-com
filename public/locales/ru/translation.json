@@ -24,7 +24,9 @@
       "phone": "Телефон",
       "instagram": "Instagram",
       "email": "Почта",
-      "address": "Адрес"
+      "address": "Адрес",
+      "about": "О нас",
+      "navigation": "Навигация"
     },
     "counters": {
       "rated_us": "Нас оценили",

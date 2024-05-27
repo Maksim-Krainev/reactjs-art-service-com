@@ -9,10 +9,7 @@ import Home from "./pages/Home";
 import RepairComputers from "./pages/RepairComputers";
 import RepairPhone from "./pages/RepairPhone";
 import RepairSmartPhone from "./pages/RepairSmartPhone";
-
-
-// import Project from "./pages/Project";
-// import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/AboutUs";
 
 
 import ScrollToTop from "./utils/scrollToTop"
@@ -28,6 +25,7 @@ function App() {
 					<Route path="/repair_computer" element={<RepairComputers/>} />
 					<Route path="/repair_phone" element={<RepairPhone/>} />
 					<Route path="/repair_smartphones" element={<RepairSmartPhone/>} />
+					<Route path="/about" element={<AboutUs />} />
 				</Routes>
 				<Footer />
 			</Router>
