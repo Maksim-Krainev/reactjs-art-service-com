@@ -86,7 +86,7 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li className='social-list__item'>
-                                    <a className='social-list__link' href='"mailto:ArtService1888@gmail.com'>
+                                    <a className='social-list__link' href='mailto:ArtService1888@gmail.com'>
                                         <img src={logoGmail} width={25} alt={t('footer.contacts')} />
                                     </a>
                                 </li>
