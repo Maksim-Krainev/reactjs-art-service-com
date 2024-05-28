@@ -31,6 +31,7 @@ const Footer = () => {
                             <p>{t('footer.sunday')}: {t('footer.closed')}</p>
                         </li>
                         <li className="social__item">
+                        <h2 className="title-2">{t('footer.navigation')}</h2>
                             <ul className='footer__navigation'>
                             <li className="footer__mavigation-item ">
                                             <NavLink

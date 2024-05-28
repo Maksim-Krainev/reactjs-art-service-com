@@ -1,7 +1,13 @@
+  .counters-section{
+    margin-top: 110vh;
+  }
+
+
   .counters-container{
     display: flex;
     justify-content: center;
     gap: 10px;
+    
   }
 
 
@@ -22,5 +28,9 @@
       flex-direction: column;
       align-items: center;
     }
+    .counters-section{
+      margin-top: 110vh;
+    }
+  
   }
   

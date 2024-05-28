@@ -5,6 +5,7 @@ import Advantages from './../components/advantages/Advantages'
 import AnimatedCounter from "./../components/animationCounter/AnimatedCounter";
 import Projects from './Projects';
 import Timeline from '../components/timeLine/TimeLine';
+import MapComponent from './../components/map/MapComponent';
 
 import { Helmet } from 'react-helmet';
 
@@ -30,7 +31,10 @@ const Home = () => {
                             <Projects />
                         </li>
                         <li className="content-list__item">
-                            <h2 className="title-2">{t('homep.counter_title')}</h2>
+                        <h2 className="title-2">{t('homep.map-title')}</h2>
+                            <MapComponent />
+                        </li>
+                        <li className="content-list__item">
                             <AnimatedCounter />
                         </li>
                         <li className="content-list__item">

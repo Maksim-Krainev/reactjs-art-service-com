@@ -53,6 +53,12 @@
 	display: none;
 }
 
+.footer__navigation{
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+
 @media (max-width: 768px){
 	.footer .title-2{
 		font-size: 16px;
@@ -62,7 +68,7 @@
 		font-size: 12px;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.footer__wrapper{
 		display: block;
 	}

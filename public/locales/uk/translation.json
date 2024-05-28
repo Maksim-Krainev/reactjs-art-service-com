@@ -70,7 +70,8 @@
       "homep": {
         "advantages_title": "Наші переваги",
         "projects_title": "Ми ремонтуємо",
-        "counter_title": "Нас оцінили"
+        "counter_title": "Нас оцінили",
+        "map-title": "Ми на карті"
       },
       "project": {
         "laptops_repair": "Ремонт Комп'ютерів",

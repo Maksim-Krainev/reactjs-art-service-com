@@ -66,10 +66,11 @@ const AnimatedCounter = () => {
   return (
     <div>
       <section className="counters-section">
+      <h2 className="title-2">{t('homep.counter_title')}</h2>
         <div className="counters-container">
-          <Counter target={8312} label={t('counters.rated_us')} />
-          <Counter target={9267} label={t('counters.repaired')} />
-          <Counter target={7415} label={t('counters.liked_us')} />
+          <Counter target={15312} label={t('counters.rated_us')} />
+          <Counter target={14267} label={t('counters.repaired')} />
+          <Counter target={13415} label={t('counters.liked_us')} />
         </div>
       </section>
     </div>

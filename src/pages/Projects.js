@@ -12,14 +12,14 @@ const Projects = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 100,
         });
     }, []);
 
     return (
         <main className="section">
             <ul className="projects">
-                <li className='project-details' data-aos="fade-up" data-aos-delay="500">
+                <li className='project-details' data-aos="fade-up" data-aos-delay="30">
                     <NavLink to="/repair_computer">
                         <div className="project-item">
                             <img src={computerImg} alt={t('repair_computers')} className="project-cover" />
@@ -27,7 +27,7 @@ const Projects = () => {
                         </div>
                     </NavLink>
                 </li>
-                <li className='project-details' data-aos="fade-up" data-aos-delay="500">
+                <li className='project-details' data-aos="fade-up" data-aos-delay="30">
                     <NavLink to="/repair_phone">
                         <div className="project-item">
                             
@@ -36,7 +36,7 @@ const Projects = () => {
                         </div>
                     </NavLink>
                 </li>
-                <li className='project-details' data-aos="fade-up" data-aos-delay="500">
+                <li className='project-details' data-aos="fade-up" data-aos-delay="30">
                     <NavLink to="/repair_smartphones">
                         <div className="project-item">
                             <img src={phneImg} alt={t('repair_smartphones')} className="project-cover" />

@@ -148,7 +148,7 @@ a {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
   #timeline {
     margin: 30px;
     padding: 0px;
