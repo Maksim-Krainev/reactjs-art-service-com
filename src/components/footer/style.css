@@ -49,6 +49,9 @@
 	gap: 50px;
 }
 
+.phone__footer-info{
+	display: none;
+}
 
 @media (max-width: 768px){
 	.footer .title-2{
@@ -67,7 +70,7 @@
 	.social{
 		padding: 10px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		justify-content: space-evenly;
 
@@ -80,19 +83,33 @@
 
 	.social-list{
 		display: flex;
+		justify-content: flex-start;
 		gap: 20px;
 	}
 
 	.social__item{
+		width: 100%;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 10px;
+		flex-wrap: nowrap;
+		justify-content: center;
 	}
 
 	.social__item-logo, .social__item-link, .cont{
 		display: none;
 	}
-	.social-list{
-		justify-content: start;
+	.social{
+		display: none;
+	}
+	.phone__footer-info{
+		display: block;
+	}
+	.footer__navigation{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: 10px;
 	}
 }

@@ -24,7 +24,7 @@ const Footer = () => {
                                 <img src={masterCard} alt={t('footer.mastercard_alt')} width={50} />
                             </div>
                         </li>
-                        <li className="social__item">
+                        <li className="social__item cont">
                             <h2 className="title-2">{t('footer.working_hours')}</h2>
                             <p>{t('footer.monday_friday')}: 09:00–19:00</p>
                             <p>{t('footer.saturday')}: 12:00–15:00</p>
@@ -62,13 +62,19 @@ const Footer = () => {
                                         </li>
                             </ul>
                         </li>
-                        <li className="social__item cont">
+                        <li className="social__item">
                             <h2 className="title-2">{t('footer.contacts')}</h2>
                             <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 768 51 11</a></p>
                             <p>{t('footer.email')}: <a href="mailto:ArtService1888@gmail.com">ArtService1888@gmail.com</a></p>
                             <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">Берестейський проспект, 99/1</a></p>
                         </li>
                     </ul>
+                    <div className='phone__footer-info'>
+                    <h2 className="title-2">{t('footer.contacts')}</h2>
+                            <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 768 51 11</a></p>
+                            <p>{t('footer.email')}: <a href="mailto:ArtService1888@gmail.com">ArtService1888@gmail.com</a></p>
+                            <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">Берестейський проспект, 99/1</a></p>
+                    </div>
                     <ul className='social-list'>
                                 <li className='social-list__item'>
                                     <a className='social-list__link' href='https://www.instagram.com/art_service111/'>
