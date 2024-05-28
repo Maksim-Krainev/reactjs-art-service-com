@@ -3,6 +3,7 @@ ul {
 }
 .button.primary {
     background-color: #e0dd22;
+    padding: 10px 20px;
     color: #fff;
 }
 
@@ -12,6 +13,7 @@ ul {
 
 .button.secondary {
     background-color: #6c757d;
+    padding: 10px 20px;
     color: #fff;
 }
 
