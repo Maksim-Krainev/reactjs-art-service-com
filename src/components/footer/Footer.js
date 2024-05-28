@@ -74,6 +74,10 @@ const Footer = () => {
                             <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 768 51 11</a></p>
                             <p>{t('footer.email')}: <a href="mailto:ArtService1888@gmail.com">ArtService1888@gmail.com</a></p>
                             <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">Берестейський проспект, 99/1</a></p>
+                            <h2 className="title-2">{t('footer.working_hours')}</h2>
+                            <p>{t('footer.monday_friday')}: 09:00–19:00</p>
+                            <p>{t('footer.saturday')}: 12:00–15:00</p>
+                            <p>{t('footer.sunday')}: {t('footer.closed')}</p>
                     </div>
                     <ul className='social-list'>
                                 <li className='social-list__item'>
