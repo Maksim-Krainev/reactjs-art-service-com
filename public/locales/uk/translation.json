@@ -71,7 +71,9 @@
         "advantages_title": "Наші переваги",
         "projects_title": "Ми ремонтуємо",
         "counter_title": "Нас оцінили",
-        "map-title": "Ми на карті"
+        "map-title": "Ми на карті",
+        "repair_title": "Каталог брендів",
+        "shop-title": "Також у нас продається"
       },
       "project": {
         "laptops_repair": "Ремонт Комп'ютерів",

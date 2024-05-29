@@ -71,7 +71,9 @@
         "advantages_title": "Наши преимущества",
         "projects_title": "Мы ремонтируем",
         "counter_title": "Нас оценили",
-        "map-title": "Мы на карте"
+        "map-title": "Мы на карте",
+        "repair_title": "Каталог брендов",
+        "shop-title": "Так же у нас можно приобрести"
       },
       "welcome": "Добро пожаловать",
       "currentLanguage": "Сейчас на сайте установлен русский язык",
