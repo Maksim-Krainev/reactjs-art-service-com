@@ -7,7 +7,7 @@
 	--black: #171718;
 	--black-border: #26292d;
 	--white: #fff;
-	--purple: #FF34B3;
+	--purple: #3448ffd5;
 
 	/* Nav */
 	--nav-bg: var(--black);
@@ -30,7 +30,7 @@
 
 	--project-card-bg: var(--white);
 	--project-card-text: var(--black);
-	--box-shadow: 0px 5px 35px #FF34B3;
+	--box-shadow: 0px 5px 35px #3448ffd5;
 }
 
 .dark {
@@ -42,7 +42,7 @@
 
 	--project-card-bg: var(--black);
 	--project-card-text: var(--white);
-	--box-shadow: 0px 5px 35px #FF34B3;
+	--box-shadow: 0px 5px 35px #3448ffd5;
 }
 
 html,
@@ -170,7 +170,7 @@ body {
 	box-sizing: border-box;
   width: 300px;
   height: 350px; 
-  box-shadow: 12px 17px 51px #FF34B3;
+  box-shadow: 12px 17px 51px #3448ffd5;
   backdrop-filter: blur(6px);
   border-radius: 17px;
   text-align: center;
@@ -185,7 +185,7 @@ body {
 }
 
 .project-details:hover{
-	border: 1px solid #FF34B3;
+	border: 1px solid #3448ffd5;
   transform: scale(1.05);
 }
 

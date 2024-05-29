@@ -3,7 +3,7 @@
 /* Variables */
 :root {
   --bg-body: #2b2b2b;
-  --red: #FF34B3;
+  --red: #3448ffd5;
   --blue: #48452b;
   --primary-color: var(--red);
   --secondary-color: var(--blue);
