@@ -2,7 +2,7 @@ ul {
     direction: none;
 }
 .button.primary {
-    background-color: #e0dd22;
+    background-color: #b700ff;
     padding: 10px 20px;
     color: #fff;
 }
@@ -19,5 +19,5 @@ ul {
 
 /* Стилі для кнопок з ефектом при наведенні */
 .button:hover {
-    background-color: #b3a700;
+    background-color: #b700ff;
 }
