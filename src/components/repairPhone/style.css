@@ -11,7 +11,7 @@
     box-sizing: border-box;
     width: 150px;
     height: 100px; 
-    box-shadow: 2px 7px 1px #3448ffd5;
+    box-shadow: 2px 7px 1px #FFD700;
     backdrop-filter: blur(6px);
     border-radius: 17px;
     text-align: center;
@@ -26,6 +26,6 @@
 }
 
 .repair-image:hover{
-    border: 1px solid #3448ffd5;
+    border: 1px solid #FFD700;
      transform: scale(1.05);
 }
