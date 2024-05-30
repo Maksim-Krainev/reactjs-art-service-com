@@ -36,14 +36,14 @@ p {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #FFD700;
+    border: 2px solid #fff000;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
     min-width: 120px;
     min-height: 120px;
     height: 375px;
-    box-shadow: 2px 4px 8px #FFD700, 2px 6px 10px #FFD700;
+    box-shadow: 2px 4px 8px #fff000, 2px 6px 10px #fff000;
 }
 
 .advantage h4 {
@@ -63,8 +63,8 @@ p {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-    border: 2px solid #FFD700;
-    box-shadow: 2px 4px 6px #FFD700, 2px 6px 5px #FFD700;
+    border: 2px solid #fff000;
+    box-shadow: 2px 4px 6px #fff000, 2px 6px 5px #fff000;
 }
 
 .advantage > * {
