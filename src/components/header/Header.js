@@ -37,7 +37,7 @@ const Header = () => {
             <div className="header__wrapper">
                 <h1 className="header__title">
                     <strong>
-                        <em>Art</em> Service 
+                        Art Service 
                     </strong>
                     <br />{t('header.title.line1')}
                 </h1>

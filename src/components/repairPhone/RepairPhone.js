@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import imgSamsung from "./../../img/png/pngwing.com (1).png";
 import imgApl from "./../../img/png/pngwing.com (2).png";
 import imgXiomi from "./../../img/png/pngwing.com (3).png";
@@ -19,6 +19,7 @@ import imgHtc from "./../../img/png/partner_htc-131x66.png";
 import imgMicrosoft from "./../../img/png/partner_microsoft-131x66.png";
 import imgMeizu from "./../../img/png/partner_meizu-131x66.png";
 import imgOne from "./../../img/png/partner_oneplus-131x66.png";
+import { useTranslation } from 'react-i18next';
 
 import "./style.css";
 
@@ -29,14 +30,38 @@ const images = [
 ];
 
 function RepairPhone() {
+  const { t } = useTranslation();
+  const [visibleImagesCount, setVisibleImagesCount] = useState(8);
+
+  const handleShowAll = () => {
+    setVisibleImagesCount(images.length);
+  };
+
+  const handleShowLess = () => {
+    setVisibleImagesCount(8);
+  };
+
   return (
-    <div className="repair-container">
-      {images.map((image, index) => (
-        <img key={index} src={image} alt={`img-${index}`}  className="repair-image" />
-      ))}
+    <div>
+      <div className="repair-container">
+        {images.slice(0, visibleImagesCount).map((image, index) => (
+          <img key={index} src={image} alt={`img-${index}`} className="repair-image" />
+        ))}
+      </div>
+      <div className="buttons-container">
+        {visibleImagesCount < images.length && (
+          <button className="show-more-button" onClick={handleShowAll}>
+            {t('scroll_btn')}
+          </button>
+        )}
+        {visibleImagesCount === images.length && (
+          <button className="show-less-button" onClick={handleShowLess}>
+            {t('scroll_btn_ex')}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
-
 
 export default RepairPhone;
