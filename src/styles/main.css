@@ -193,6 +193,13 @@ body {
 	color: var(--text-color);
 }
 
+.card-flex{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+	gap: 1em;
+}
 
   @media (max-width: 600px) {
 

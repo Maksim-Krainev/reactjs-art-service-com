@@ -9,7 +9,7 @@
 .repair-image {
     box-sizing: border-box;
     width: 200px;
-    height: 200px; 
+    height: 100px; 
     backdrop-filter: blur(6px);
     border-radius: 17px;
     text-align: center;
