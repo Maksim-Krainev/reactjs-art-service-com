@@ -4,9 +4,11 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './style.css';
 
-import BgImg01 from "./../../img/hero_bg_01.jpg";
-import BgImg02 from "./../../img/hero_bg_02.jpg";
-import BgImg03 from "./../../img/hero_bg_03.jpg";
+import BgImg01 from "./../../img/1.png";
+import BgImg02 from "./../../img/5.png";
+import BgImg03 from "./../../img/6.png";
+import BgImg04 from "./../../img/7.png";
+import BgImg05 from "./../../img/8.png";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -32,6 +34,12 @@ const Header = () => {
                 </div>
                 <div>
                     <img src={BgImg03} alt={t('header.slide3')} />
+                </div>
+                <div>
+                    <img src={BgImg04} alt={t('header.slide4')} />
+                </div>
+                <div>
+                    <img src={BgImg05} alt={t('header.slide5')} />
                 </div>
             </Carousel>
             <div className="header__wrapper">
