@@ -9,6 +9,10 @@ import './style.css';
 import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
 import closeBtn from './../../img/icons/close-svgrepo-com.svg'
 
+import logoInsta from "./../../img/icons/instagram-svgrepo-com.svg";
+import logoGmail from "./../../img/icons/gmail-svgrepo-com.svg";
+import logoTg from "./../../img/icons/telegram-plane-svgrepo-com.svg"
+
 const Navbar = () => {
     const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,19 +42,26 @@ const Navbar = () => {
                         <img src={NavMenuIcon} className='nav-menu-pic' alt={t('menu_button_alt')} width={25}/>
                     </div>
 
-                    
-
-
                     <ul className={`nav-list ${menuOpen ? 'nav-list--open' : ''}`}>
                     <div className={`nav-mobile-icons ${menuOpen ? 'nav-mobile-icons--open' : ''}`}>
                         <button className="nav-mobile-icon-button" onClick={closeMenu}>
                             <img src={closeBtn} className='nav-close-pic' width={25} alt={t('closeBtnAlt')}/>
                         </button>
-                        <a href="tel:+380507685111" className="nav-mobile-icon-link">
-                            <img src={NavPhoneBtn} className='nav-logo-phone'  width={25}  alt={t('phoneBtnAlt')}/>
-                        </a>
-                    </div>
-                    
+                        <NavLink to="/" className="logo">
+                        <img src={NavLogo} className='nav-logo' alt={t('logo_alt')} />
+                    </NavLink>
+                    </div>  
+                    <li className=" nav-list__item-phone phone-menu nav-phone-top">
+                                            <NavLink
+                                                to="/"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('footer.home')}
+                                            </NavLink>
+                                        </li>                    
                     <li className="nav-list__item nav-list__item-phone ">
                                             <NavLink
                                                 to="/repair_computer"
@@ -86,7 +97,41 @@ const Navbar = () => {
                                                 {t('repair_smartphones')}
                                             </NavLink>
                                         </li>
-
+                                        <li className=" nav-list__item-phone phone-menu">
+                                            <NavLink
+                                                to="/about"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('footer.about')}
+                                            </NavLink>
+                                        </li>
+                                        <li className=" nav-list__item-phone phone-menu">
+                                        <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center', color: '#fff', marginTop: '50px', fontSize: '20px'}}>
+                                <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={25} style={{ marginRight: '5px' }}/> {t('phone_number')}
+                            </a>
+                                        </li>
+                                        <li className=" nav-list__item-phone phone-menu">
+                                        <ul className='social-list'>
+                                <li className='social-list__item'>
+                                    <a className='social-list__link' href='https://www.instagram.com/art_service111/'>
+                                        <img src={logoInsta} width={25} alt={t('footer.contacts')} />
+                                    </a>
+                                </li>
+                                <li className='social-list__item'>
+                                    <a className='social-list__link' href='mailto:ArtService1888@gmail.com'>
+                                        <img src={logoGmail} width={25} alt={t('footer.contacts')} />
+                                    </a>
+                                </li>
+                                <li className='social-list__item'>
+                                    <a className='social-list__link' href='https://t.me/ArtService111'>
+                                        <img src={logoTg} width={25} alt={t('footer.contacts')} />
+                                    </a>
+                                </li>
+                            </ul>
+                                        </li>
                         <li className="nav-list__item pk_phone">
                             <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center' }}>
                                 <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={15} style={{ marginRight: '5px' }}/> {t('phone_number')}

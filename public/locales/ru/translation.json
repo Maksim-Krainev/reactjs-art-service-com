@@ -26,7 +26,8 @@
     "email": "Почта",
     "address": "Адрес",
     "about": "О нас",
-    "navigation": "Навигация"
+    "navigation": "Навигация",
+    "home": "Главная"
   },
   "counters": {
     "rated_us": "Нас оценили",
