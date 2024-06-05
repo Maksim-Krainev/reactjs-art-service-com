@@ -25,7 +25,7 @@ import "./style.css";
 
 const images = [
   imgSamsung, imgApl, imgXiomi, imgHuavei, imgLg, imgLenovo, 
- imgNokia,  imgDell, 
+  imgNokia,  imgDell, 
   imgAcer, imgAsus, imgMicrosoft, imgOne
 ];
 

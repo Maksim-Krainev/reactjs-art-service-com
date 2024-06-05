@@ -22,47 +22,47 @@ const Home = () => {
 
       const articles = [
         {
-          imgSrc: "https://images.unsplash.com/photo-1708724195876-1156245fce21?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://content.rozetka.com.ua/goods/images/big/350130769.jpg",
           title: t('shope.screen_protectors'),
           category: "naps",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1709625862284-b8a82d339b99?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://content.rozetka.com.ua/goods/images/big/218364767.jpg",
           title: t('shope.batteries'),
           category: "computers",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1643916861364-02e63ce3e52f?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://content.rozetka.com.ua/goods/images/big/250068853.jpg",
           title: t('shope.chargers'),
           category: "snacks",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1672217617440-1dd3e9417ce1?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://content2.rozetka.com.ua/goods/images/big/372316597.jpg",
           title: t('shope.hubs_adapters'),
           category: "snacks",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1699462515761-90db271d77c8?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://cs.vchehle.ua/uploads/soGCSoQyklUg3qwWwxuwmC8dxyWyMUS5.jpg",
           title: t('shope.cases'),
           category: "naps",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1709625862266-014ef072fd93?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://quality.in.ua/content/images/47/600x600l80mc0/karta-pamiati-kingston-512gb-microsdxc-class-10-uhs-i-u3-a2-canvas-go-plus-sdcg3-512gb-82434345813446.webp",
           title: t('shope.storage_memory_cards'),
           category: "computers",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1695278255455-9afc87008775?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://content.rozetka.com.ua/goods/images/big/336323415.jpg",
           title: t('shope.power_banks'),
           category: "computers",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1637611331620-51149c7ceb94?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://eurounica.com/image/cache/catalog/paleti/tehnika/computer/kabeli-perehodniki/001/kabel-dlya-zaryadki-ugreen-usb-c-usb-c-100-vt-1m-2-sht-my-1102-860x860.jpg",
           title: t('shope.cables'),
           category: "snacks",
         },
         {
-          imgSrc: "https://images.unsplash.com/photo-1688748807457-d8926e351596?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=400",
+          imgSrc: "https://content2.rozetka.com.ua/goods/images/big/172266668.jpg",
           title: t('shope.headphones'),
           category: "naps",
         },
