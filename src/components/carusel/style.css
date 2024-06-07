@@ -1,0 +1,55 @@
+  :root{
+    --bg-clr: var(--page-bg);
+  }
+  
+  .carousel-wrapper {
+    --width: 100px;
+    --gap: 0;
+    --num-items: 10;
+    --ani-offset: calc(var(--width) * var(--num-items) * -1);
+    --ani-speed: 30s;
+    
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel-wrapper::before,
+  .carousel-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+  }
+  .carousel-wrapper::before{
+    left: 0;
+    background-image: linear-gradient(to right,var(--bg-clr) 0%,transparent 50%);
+  }
+  .carousel-wrapper::after{
+    right: 0;
+    background-image: linear-gradient(to left,var(--bg-clr) 0%,transparent 50%);
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    animation: slide var(--ani-speed) linear infinite;
+  }
+  .item{
+    flex: 1 0 var(--width);
+    text-align: center;
+    padding:1rem;
+  }
+  .item > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    100% {
+      transform: translateX(var(--ani-offset));
+    }
+  }
+  
