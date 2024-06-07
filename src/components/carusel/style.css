@@ -24,11 +24,11 @@
   }
   .carousel-wrapper::before{
     left: 0;
-    background-image: linear-gradient(to right,var(--bg-clr) 0%,transparent 50%);
+    background-image: linear-gradient(to right,var(--page-bg) 0%,transparent 50%);
   }
   .carousel-wrapper::after{
     right: 0;
-    background-image: linear-gradient(to left,var(--bg-clr) 0%,transparent 50%);
+    background-image: linear-gradient(to left,var(--page-bg) 0%,transparent 50%);
   }
   
   .carousel {
