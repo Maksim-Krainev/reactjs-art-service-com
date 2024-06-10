@@ -65,13 +65,13 @@
 
 @media (max-width: 821px) {
 	.header {
+        margin-top: 40px;
         min-height: 50vh; 
     }
     
     .carousel .slide img {
-        width: auto;
-        height: 50vh; 
-        object-fit: contain;
+        height: auto; 
+        object-fit: fill;
     }
 
     .header__title {
