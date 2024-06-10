@@ -50,7 +50,7 @@ const HeaderRepairMobile = () => {
                     <br />{t('hero-repair-computer.title')}
                 </h1>
                 <div className="header__text">
-                    <p>{t('hero-repair-computer.header-text')}</p>
+                    <p>{t('hero-repair-phone.header-text')}</p>
                 </div>
             </div>
         </header>

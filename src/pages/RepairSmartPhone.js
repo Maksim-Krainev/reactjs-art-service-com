@@ -52,33 +52,33 @@ function RepairSmartPhone() {
 
   const services = [
     {
-      title: t('hero-repair-note.card.title_1'),
-      body: t('hero-repair-note.card.body_1'),
+      title: t('hero-repair-phone.card.title_1'),
+      body: t('hero-repair-phone.card.body_1'),
       price: "1500"
     },
     {
-      title: t('hero-repair-note.card.title_2'),
-      body: t('hero-repair-note.card.body_2'),
+      title: t('hero-repair-phone.card.title_2'),
+      body: t('hero-repair-phone.card.body_2'),
       price: "1500"
     },
     {
-      title: t('hero-repair-note.card.title_3'),
-      body: t('hero-repair-note.card.body_3'),
+      title: t('hero-repair-phone.card.title_3'),
+      body: t('hero-repair-phone.card.body_3'),
       price: "1500"
     },
     {
-      title: t('hero-repair-note.card.title_4'),
-      body: t('hero-repair-note.card.body_4'),
+      title: t('hero-repair-phone.card.title_4'),
+      body: t('hero-repair-phone.card.body_4'),
       price: "1500"
     },
     {
-      title: t('hero-repair-note.card.title_5'),
-      body: t('hero-repair-note.card.body_5'),
+      title: t('hero-repair-phone.card.title_5'),
+      body: t('hero-repair-phone.card.body_5'),
       price: "1500"
     },
     {
-      title: t('hero-repair-note.card.title_6'),
-      body: t('hero-repair-note.card.body_6'),
+      title: t('hero-repair-phone.card.title_6'),
+      body: t('hero-repair-phone.card.body_6'),
       price: "1500"
     }
   ];
