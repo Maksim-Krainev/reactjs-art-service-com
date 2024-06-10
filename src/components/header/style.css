@@ -65,7 +65,6 @@
 
 @media (max-width: 821px) {
 	.header {
-        margin-top: 40px;
         min-height: 50vh; 
     }
     
