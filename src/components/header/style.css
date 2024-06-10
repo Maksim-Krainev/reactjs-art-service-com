@@ -65,7 +65,7 @@
 
 @media (max-width: 821px) {
 	.header {
-        min-height: 50vh; 
+        min-height: auto; 
     }
     
     .carousel .slide img {
