@@ -4,11 +4,13 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // import './style.css';
 
-import BgImg01 from "./../../img/pc-page/comp_1.jpg";
-import BgImg02 from "./../../img/pc-page/comp_3.jpg";
-import BgImg03 from "./../../img/pc-page/laptop_2.jpg";
+import BgImg01 from "./../../img/mobale-page/mob_1.jpg";
+import BgImg02 from "./../../img/mobale-page/mob_2.jpg";
+import BgImg03 from "./../../img/mobale-page/mob_3.jpg";
+import BgImg04 from "./../../img/mobale-page/mob_4.jpg";
+import BgImg05 from "./../../img/mobale-page/mob_5.jpg";
 
-const HeaderRepairComputer = () => {
+const HeaderRepairMobile = () => {
     const { t } = useTranslation();
 
     return (
@@ -33,6 +35,12 @@ const HeaderRepairComputer = () => {
                 <div>
                     <img src={BgImg03} alt={t('header.slide3')} />
                 </div>
+                <div>
+                    <img src={BgImg04} alt={t('header.slide3')} />
+                </div>
+                <div>
+                    <img src={BgImg05} alt={t('header.slide3')} />
+                </div>
             </Carousel>
             <div className="header__wrapper">
                 <h1 className="header__title">
@@ -49,4 +57,4 @@ const HeaderRepairComputer = () => {
     );
 }
 
-export default HeaderRepairComputer;
+export default HeaderRepairMobile;

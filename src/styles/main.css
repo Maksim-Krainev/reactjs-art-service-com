@@ -242,6 +242,8 @@ body {
   }
   
   @media (min-width: 480px) {
+	
+
 	.rwd-table {
 	  display: table;
 	}
@@ -279,10 +281,6 @@ body {
 
 @media (max-width: 821px) {
 	/* Header  */
-
-	.header {
-		min-height: unset;
-	}
 
 	.header__title {
 		font-size: 30px;

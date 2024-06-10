@@ -4,9 +4,9 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // import './style.css';
 
-import BgImg01 from "./../../img/hero_bg_01.jpg";
-import BgImg02 from "./../../img/hero_bg_02.jpg";
-import BgImg03 from "./../../img/hero_bg_03.jpg";
+import BgImg01 from "./../../img/laptop-page/laptop_1.jpg";
+import BgImg02 from "./../../img/laptop-page/laptop_2.jpg";
+import BgImg03 from "./../../img/laptop-page/laptop_3.jpg";
 
 const HeaderRepairNote = () => {
     const { t } = useTranslation();
