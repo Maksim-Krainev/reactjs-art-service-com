@@ -2,9 +2,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import planshImg from "./../img/icons/Phone maintenance-bro.svg";
-import computerImg from "./../img/icons/Computer troubleshooting-amico.svg";
-import phneImg from "./../img/icons/Phone maintenance-rafiki.svg";
+import planshImg from "./../img/png/laptop_ico2.png";
+import computerImg from "./../img/png/comp_ico2.png";
+import phneImg from "./../img/png/mob_ico2.png";
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
