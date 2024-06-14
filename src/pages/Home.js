@@ -42,7 +42,7 @@ const Home = () => {
           category: "snacks",
         },
         {
-          imgSrc: "https://cs.vchehle.ua/uploads/soGCSoQyklUg3qwWwxuwmC8dxyWyMUS5.jpg",
+          imgSrc: "https://content2.rozetka.com.ua/goods/images/big/398237734.jpg",
           title: t('shope.cases'),
           category: "naps",
         },

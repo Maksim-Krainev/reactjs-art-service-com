@@ -53,17 +53,17 @@ function RepairComputers() {
     {
       title: t('hero-repair-computer.card.title_1'),
       body: t('hero-repair-computer.card.body_1'),
-      price: "1500"
+      price: "300"
     },
     {
       title: t('hero-repair-computer.card.title_2'),
       body: t('hero-repair-computer.card.body_2'),
-      price: "1500"
+      price: "2000"
     },
     {
       title: t('hero-repair-computer.card.title_3'),
       body: t('hero-repair-computer.card.body_3'),
-      price: "1500"
+      price: "2200"
     },
     {
       title: t('hero-repair-computer.card.title_4'),

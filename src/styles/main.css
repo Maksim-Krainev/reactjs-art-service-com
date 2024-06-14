@@ -240,6 +240,10 @@ body {
   .rwd-table .service-price {
 	margin: 0.5em 0;
   }
+
+  .service-title{
+	font-weight: 600;
+  }
   
   @media (min-width: 480px) {
 	
