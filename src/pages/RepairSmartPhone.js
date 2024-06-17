@@ -106,37 +106,37 @@ function RepairSmartPhone() {
     {
       title: t('hero-repair-phone.card.title_11'),
       body: t('hero-repair-phone.card.body_11'),
-      price: "???"
+      price: "1000"
     },
     {
       title: t('hero-repair-phone.card.title_12'),
       body: t('hero-repair-phone.card.body_12'),
-      price: "????"
+      price: "2000"
     },
     {
       title: t('hero-repair-phone.card.title_13'),
       body: t('hero-repair-phone.card.body_13'),
-      price: "???"
+      price: "800"
     },
     {
       title: t('hero-repair-phone.card.title_14'),
       body: t('hero-repair-phone.card.body_14'),
-      price: "1100"
+      price: "1800"
     },
     {
       title: t('hero-repair-phone.card.title_15'),
       body: t('hero-repair-phone.card.body_15'),
-      price: "950"
+      price: "1500"
     },
     {
       title: t('hero-repair-phone.card.title_16'),
       body: t('hero-repair-phone.card.body_16'),
-      price: "1300"
+      price: "1500"
     },
     {
       title: t('hero-repair-phone.card.title_17'),
       body: t('hero-repair-phone.card.body_17'),
-      price: "1100"
+      price: "1500"
     },
     {
       title: t('hero-repair-phone.card.title_18'),
@@ -146,7 +146,7 @@ function RepairSmartPhone() {
     {
       title: t('hero-repair-phone.card.title_19'),
       body: t('hero-repair-phone.card.body_19'),
-      price: "???"
+      price: "2000"
     },
     
   ];

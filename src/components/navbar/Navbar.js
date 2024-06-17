@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
 import NavLogo from "../../img/logo02.png";
@@ -16,6 +16,7 @@ import logoTg from "./../../img/icons/telegram-plane-svgrepo-com.svg"
 const Navbar = () => {
     const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
 
     const activeLink = 'nav-list__link nav-list__link--active';
     const normalLink = 'nav-list__link';
@@ -28,11 +29,20 @@ const Navbar = () => {
         setMenuOpen(false); 
     };
 
+    const handleLogoClick = () => {
+        if (location.pathname === '/') {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      };
+
     return (
         <nav className="nav">
             <div className="container">
                 <div className="nav-row">
-                    <NavLink to="/" className="logo">
+                    <NavLink to="/" className="logo" onClick={handleLogoClick}>
                         <img src={NavLogo} className='nav-logo' alt={t('logo_alt')} />
                     </NavLink>
 
@@ -52,7 +62,7 @@ const Navbar = () => {
                     </NavLink>
                     </div>  
                     <li className=" nav-list__item-phone phone-menu nav-phone-top">
-                                            <NavLink
+                                           <NavLink
                                                 to="/"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink

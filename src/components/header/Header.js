@@ -34,7 +34,7 @@ const Header = () => {
                     <img src={BgImg03} alt={t('header.slide3')} />
                 </div>
             </Carousel>
-            <div className="header__wrapper">
+            <div className="header__wrapper" id='hero'>
                 <h1 className="header__title">
                     <strong>
                         Art Service 
