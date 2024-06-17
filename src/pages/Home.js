@@ -82,10 +82,7 @@ const Home = () => {
             <main className="section">
                 <div className="container">
                     <ul className="content-list">
-                        <li className="content-list__item">
-                            <h2 className="title-2">{t('homep.advantages_title')}</h2>
-                            <Advantages />
-                        </li>
+                        
                         <li className="content-list__item">
                             <h2 className="title-2">{t('homep.projects_title')}</h2>
                             <Projects />
@@ -98,12 +95,17 @@ const Home = () => {
                             <h2 className="title-2">{t('homep.shop-title')}</h2>
                             <ArticleList articles={filteredArticles} />
                         </li>
+                        
+                        <li className="content-list__item">
+                            <AnimatedCounter />
+                        </li>
+                        <li className="content-list__item">
+                            <h2 className="title-2">{t('homep.advantages_title')}</h2>
+                            <Advantages />
+                        </li>
                         <li className="content-list__item">
                         <h2 className="title-2">{t('homep.map-title')}</h2>
                             <MapComponent />
-                        </li>
-                        <li className="content-list__item">
-                            <AnimatedCounter />
                         </li>
                         <li className="content-list__item">
                             <Timeline />

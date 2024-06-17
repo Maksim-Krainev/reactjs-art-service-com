@@ -24,6 +24,7 @@ a {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+
 }
 
 
@@ -35,6 +36,7 @@ a {
   position: relative;
   padding: 0 10px;
   transition: all .4s ease;
+  margin-top: 100vh;
 }
 
 #timeline:before {
