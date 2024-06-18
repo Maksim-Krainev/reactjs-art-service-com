@@ -244,6 +244,10 @@ body {
   .service-title{
 	font-weight: 600;
   }
+
+  .animated-count{
+	margin-top: 110vh;
+  }
   
   @media (min-width: 480px) {
 	

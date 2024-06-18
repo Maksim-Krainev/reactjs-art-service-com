@@ -94,11 +94,7 @@ const Home = () => {
                         <li className="content-list__item">
                             <h2 className="title-2">{t('homep.shop-title')}</h2>
                             <ArticleList articles={filteredArticles} />
-                        </li>
-                        
-                        <li className="content-list__item">
-                            <AnimatedCounter />
-                        </li>
+                        </li>                       
                         <li className="content-list__item">
                             <h2 className="title-2">{t('homep.advantages_title')}</h2>
                             <Advantages />
@@ -106,6 +102,9 @@ const Home = () => {
                         <li className="content-list__item">
                         <h2 className="title-2">{t('homep.map-title')}</h2>
                             <MapComponent />
+                        </li>
+                        <li className="content-list__item animated-count">
+                            <AnimatedCounter />
                         </li>
                         <li className="content-list__item">
                             <Timeline />

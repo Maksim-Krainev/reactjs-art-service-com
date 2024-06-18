@@ -36,7 +36,6 @@ a {
   position: relative;
   padding: 0 10px;
   transition: all .4s ease;
-  margin-top: 110vh;
 }
 
 #timeline:before {
