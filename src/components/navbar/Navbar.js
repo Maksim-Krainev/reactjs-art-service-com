@@ -108,7 +108,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
-                                                to="/repair_computer"
+                                                to="/repair_imac"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink
                                                 }
@@ -119,7 +119,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
-                                                to="/repair_phone"
+                                                to="/repair_mack"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink
                                                 }
@@ -130,7 +130,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
-                                                to="/repair_smartphones"
+                                                to="/repair_iphone"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink
                                                 }

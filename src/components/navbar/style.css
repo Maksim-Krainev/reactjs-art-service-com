@@ -224,9 +224,6 @@
   .pk_phone{
     display: none;
   }
-  .nav-list__item {
-    margin: 10px 0;
-}
 
   .nav-list__item-mobile {
     display: block;
@@ -241,11 +238,19 @@
 }
 
 .nav-phone-top{
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .nav-list__item-phone .social-list{
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.nav-list__item{
+  margin-bottom: 10px;
+}
+
+.nav-list__item-phone{
+  margin-bottom: 10px;
 }
 
 
