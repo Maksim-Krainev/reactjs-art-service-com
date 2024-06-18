@@ -192,6 +192,10 @@ body {
 .project-title{
 	color: var(--text-color);
 }
+.animated-count{
+	margin-top: 110vh;
+  }
+
 
 .card-flex{
 	display: flex;
@@ -234,20 +238,16 @@ body {
 	display: inline-block;
 	color: rgb(0, 0, 0);
   }
-  
-  .rwd-table .service-title,
-  .rwd-table .service-description,
   .rwd-table .service-price {
-	margin: 0.5em 0;
+	margin-bottom: 2em;
   }
 
   .service-title{
 	font-weight: 600;
   }
 
-  .animated-count{
-	margin-top: 110vh;
-  }
+
+
   
   @media (min-width: 480px) {
 	
@@ -283,7 +283,7 @@ body {
 	.rwd-table td:last-child {
 	  padding-right: 0;
 	}
-  }
+	}
   
 
 

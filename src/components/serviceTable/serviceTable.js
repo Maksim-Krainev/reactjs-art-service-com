@@ -2,14 +2,15 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function ServicesTable({ services }) {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
+
   return (
     <table className="rwd-table">
       <thead>
         <tr>
-            <th>{t('hero-repair-computer.card.service-title')}</th>
-            <th>{t('hero-repair-computer.card.description')}</th>
-            <th>{t('hero-repair-computer.card.price')}</th>
+          <th>{t('hero-repair-computer.card.service-title')}</th>
+          <th>{t('hero-repair-computer.card.description')}</th>
+          <th>{t('hero-repair-computer.card.price')}</th>
         </tr>
       </thead>
       <tbody>
