@@ -79,7 +79,11 @@
   "project": {
     "laptops_repair": "Ремонт Комп'ютерів",
     "tablets_repair": "Ремонт Планшетів",
-    "phones_repair": "Ремонт телефонів"
+    "phones_repair": "Ремонт телефонів",
+    "repair_airmak": "Ремонт Apple iMac",
+    "repair_mac": "Ремонт Apple MacBook",
+    "repair_iphone": "Ремонт Iphone",
+    "repair_smart-whach": "Ремонт Apple Watch"
   },
   "welcome": "Добро пожаловать",
   "currentLanguage": "Сейчас на сайте установлен русский язык",

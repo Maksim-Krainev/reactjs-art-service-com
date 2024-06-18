@@ -83,6 +83,17 @@ const Navbar = () => {
                                                 {t('repair_computers')}
                                             </NavLink>
                                         </li>
+                                        <li className=" nav-list__item-phone phone-menu">
+                                            <NavLink
+                                                to="/repair_computer"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_airmak')}
+                                            </NavLink>
+                                        </li>
 
                                         <li className="nav-list__item nav-list__item-phone">
                                             <NavLink
@@ -95,6 +106,17 @@ const Navbar = () => {
                                                 {t('repair_phones')}
                                             </NavLink>
                                         </li>
+                                        <li className=" nav-list__item-phone phone-menu">
+                                            <NavLink
+                                                to="/repair_phone"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_mac')}
+                                            </NavLink>
+                                        </li>
 
                                         <li className="nav-list__item nav-list__item-phone">
                                             <NavLink
@@ -105,6 +127,28 @@ const Navbar = () => {
                                                 onClick={closeMenu} 
                                             >
                                                 {t('repair_smartphones')}
+                                            </NavLink>
+                                        </li>
+                                        <li className=" nav-list__item-phone phone-menu">
+                                            <NavLink
+                                                to="/repair_smartphones"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_iphone')}
+                                            </NavLink>
+                                        </li>
+                                        <li className=" nav-list__item-phone phone-menu">
+                                            <NavLink
+                                                to="/repair_smartphones"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_smart-whach')}
                                             </NavLink>
                                         </li>
                                         <li className=" nav-list__item-phone phone-menu">

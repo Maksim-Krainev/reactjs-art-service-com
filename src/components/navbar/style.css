@@ -197,7 +197,7 @@
         justify-content: center;
         align-items: start;
         background-color: var(--nav-border);
-        font-size: 30px;
+        font-size: 20px;
         z-index: 10000;
         padding: 30px;
     }
@@ -241,11 +241,12 @@
 }
 
 .nav-phone-top{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .nav-list__item-phone .social-list{
   margin-top: 20px;
 }
+
 
 }
