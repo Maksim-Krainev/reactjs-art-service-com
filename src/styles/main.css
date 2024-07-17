@@ -246,7 +246,27 @@ body {
 	font-weight: 600;
   }
 
+  .about-us__item{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+  }
 
+  .about-us__left{
+	flex-direction: row-reverse;
+  }
+
+  .about-us__item p{
+	max-width: 450px;
+  }
+
+  .about-us__item iframe{
+	border-radius: 1rem;
+	margin: 20px 15px;
+	width: 560px ;
+	height: 315px;
+  }
 
   
   @media (min-width: 480px) {
@@ -347,6 +367,19 @@ body {
 	.social__item {
 		width: 28px;
 	}
+
+	.about-us__item{
+		display: block;
+	  }
+	
+	  .about-us__item p{
+		max-width: 450px;
+		margin: 0 auto;
+	  }
+	  .about-us__item iframe{
+		width: 320px;
+		height: auto;
+	  }
 }
 .App{
 	min-width: 100vw;
