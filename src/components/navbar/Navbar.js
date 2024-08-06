@@ -106,7 +106,7 @@ const Navbar = () => {
                                                 {t('repair_smartphones')}
                                             </NavLink>
                                         </li>
-                                        <li className=" nav-list__item-phone phone-menu">
+                                        {/* <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
                                                 to="/repair_imac"
                                                 className={({ isActive }) =>
@@ -116,7 +116,7 @@ const Navbar = () => {
                                             >
                                                 {t('project.repair_airmak')}
                                             </NavLink>
-                                        </li>
+                                        </li> */}
                                         <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
                                                 to="/repair_mack"
