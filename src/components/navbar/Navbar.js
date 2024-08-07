@@ -53,14 +53,16 @@ const Navbar = () => {
                     </div>
 
                     <ul className={`nav-list ${menuOpen ? 'nav-list--open' : ''}`}>
+                    <li className=" nav-list__item-phone phone-menu nav-phone-top">
                     <div className={`nav-mobile-icons ${menuOpen ? 'nav-mobile-icons--open' : ''}`}>
                         <button className="nav-mobile-icon-button" onClick={closeMenu}>
                             <img src={closeBtn} className='nav-close-pic' width={25} alt={t('closeBtnAlt')}/>
                         </button>
                         <NavLink to="/" className="logo">
-                        <img src={NavLogo} className='nav-logo' alt={t('logo_alt')} />
+                        <img src={NavLogo} className='nav-logo mobile-logo' alt={t('logo_alt')} />
                     </NavLink>
                     </div>  
+                    </li>
                     <li className=" nav-list__item-phone phone-menu nav-phone-top">
                                            <NavLink
                                                 to="/"

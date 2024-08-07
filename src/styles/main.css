@@ -352,6 +352,27 @@ body {
 	.nav-row {
 		justify-content: space-between;
 	}
+	.nav-list,  .nav-list--open{
+		flex-wrap: nowrap;
+	}
+
+	.nav-list--open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-color: var(--nav-border);
+        font-size: 20px;
+        z-index: 10000;
+        padding: 30px;
+		flex-wrap: nowrap;
+	}
+
 
 	.dark-mode-btn {
 		order: 0;

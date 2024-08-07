@@ -8,6 +8,7 @@ import masterCard from "./../../img/icons/mastercard-full-svgrepo-com.svg";
 import logoInsta from "./../../img/icons/instagram-svgrepo-com.svg";
 import logoGmail from "./../../img/icons/gmail-svgrepo-com.svg";
 import logoTg from "./../../img/icons/telegram-plane-svgrepo-com.svg"
+import logoYouTube from "./../../img/icons/youtube-svgrepo-com.svg";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -94,6 +95,11 @@ const Footer = () => {
                                 <li className='social-list__item'>
                                     <a className='social-list__link' href='https://t.me/ArtService111'>
                                         <img src={logoTg} width={25} alt={t('footer.contacts')} />
+                                    </a>
+                                </li>
+                                <li className='social-list__item'>
+                                    <a className='social-list__link' href='https://www.youtube.com/@Art_Service.'>
+                                        <img src={logoYouTube} width={25} alt={t('footer.contacts')} />
                                     </a>
                                 </li>
                             </ul>
