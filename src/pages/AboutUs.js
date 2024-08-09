@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import HeaderRepairComputer from './../components/heroAboutUs/HeroRepairComputer';
 
-
 const AboutUs = () => {
     const { t } = useTranslation();
 
@@ -15,14 +14,14 @@ const AboutUs = () => {
             </Helmet>
             <HeaderRepairComputer />
             <div className='container'>
-            <div className='about-text'>
-                        <p>Наш якісний ремонт телефонів, планшетів та комп'ютерів забезпечить надійність та довговічність у кожному відновленому гаджеті. Оберіть майстрів для Ваших гаджетів з <strong>ArtService</strong>.</p>
-                        <p> Наші майстри мають десятирічний досвід у сфері обслуговування електроніки.</p>
-                        <p>✓ Ми вирішуємо найскладніші технічні завдання з впевненістю та точністю.</p>
-                        <p>✓ Ми використовуємо лише оригінальні деталі, щоб ваш пристрій працював як новий.</p>
-                        <p>✓ Ми знаємо, що кожен клієнт та кожен пристрій унікальні, це дозволяє нам впроваджувати персоналізовані рішення, щоб максимально відповідати вашим очікуванням.</p>
-                        <p> Наша місія – не просто відновити ваш гаджет, а стати надійним партнером для подальшої співпраці. Ми знаємо, кожен гаджет у вашій родині потребує технічної підтримки, а ви – комфортних умов співпраці.</p>
-                    </div>
+                <div className='about-text'>
+                    <p>{t('about_us_text.p1', { company: 'ArtService' })}</p>
+                    <p>{t('about_us_text.p2')}</p>
+                    <p>{t('about_us_text.p3')}</p>
+                    <p>{t('about_us_text.p4')}</p>
+                    <p>{t('about_us_text.p5')}</p>
+                    <p>{t('about_us_text.p6')}</p>
+                </div>
                 <div className='about-container'>
                     <div className='about-video'>
                         <iframe 
@@ -53,7 +52,6 @@ const AboutUs = () => {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    
                 </div>
             </div>
         </>
