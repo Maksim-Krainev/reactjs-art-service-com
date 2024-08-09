@@ -246,55 +246,54 @@ body {
 	font-weight: 600;
   }
 
-  .about-container {
+  .about-video {
     display: flex;
-    gap: 30px;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: row;
-    gap: 40px; 
-
-
-}
-
-.about-video {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Розділяє iframe рівномірно по горизонталі */
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%; /* Займає всю ширину батьківського контейнера */
+}
+
+.about-iframe-left {
+    align-self: flex-start; /* Вирівнює iframe зліва */
+    margin-right: auto; /* Відштовхує інші елементи вправо */
+}
+
+.about-iframe-right {
+    align-self: flex-start; /* Вирівнює iframe справа */
+    margin-left: auto; /* Відштовхує інші елементи вліво */
 }
 
 .about-iframe {
-	margin-top: 1rem;
+    margin-top: 1rem;
     width: 100%;
     max-width: 560px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s; 
-	flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex-shrink: 0;
 }
 
 .about-iframe:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .about-text {
     max-width: 800px;
-    text-align: left;
-    font-size: 1.1em; 
+    margin: 0 auto;
 }
 
 .about-text p {
-    line-height: 1.8; 
+    line-height: 1.8;
+    font-size: 1.3em;
     margin-bottom: 1.2em;
 }
 
 .about-text strong {
     color: #fbff00;
 }
+
 
 
   

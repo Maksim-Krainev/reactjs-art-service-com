@@ -15,6 +15,7 @@ import RepairSmartPhone from "./pages/RepairSmartPhone";
 import RepairIphone from "./pages/RepairIphone";
 import AboutUs from "./pages/AboutUs";
 import LanguagePrompt from "./components/languagePrompt/LanguagePrompt";
+import RepairSmartWhatch from "./pages/RepairSmartWhatch";
 
 
 import ScrollToTop from "./utils/scrollToTop"
@@ -44,6 +45,7 @@ function App() {
 					<Route path="/repair_mack" element={<RepairMackbook/>} />
 					<Route path="/repair_iphone" element={<RepairIphone/>} />
 					<Route path="/repair_smartphones" element={<RepairSmartPhone/>} />
+					<Route path="/repair_smartwhatch" element={< RepairSmartWhatch />} />
 					<Route path="/about" element={<AboutUs />} />
 				</Routes>
 				<Footer />

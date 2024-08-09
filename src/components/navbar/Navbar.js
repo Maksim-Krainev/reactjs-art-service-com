@@ -143,7 +143,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
-                                                to="/repair_smartphones"
+                                                to="/repair_smartwhatch"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink
                                                 }
