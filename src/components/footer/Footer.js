@@ -66,16 +66,16 @@ const Footer = () => {
                         </li>
                         <li className="social__item">
                             <h2 className="title-2">{t('footer.contacts')}</h2>
-                            <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 768 51 11</a></p>
+                            <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 76 85 111</a></p>
                             <p>{t('footer.email')}: <a href="mailto:ArtService1888@gmail.com">ArtService1888@gmail.com</a></p>
-                            <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">г. Киев, Берестейський проспект, 99/1</a></p>
+                            <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">{t('footer.adress')}</a></p>
                         </li>
                     </ul>
                     <div className='phone__footer-info'>
                     <h2 className="title-2">{t('footer.contacts')}</h2>
-                            <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 768 51 11</a></p>
+                            <p>{t('footer.phone')}: <a href="tel:+380507685111">+380 (50) 76 85 111</a></p>
                             <p>{t('footer.email')}: <a href="mailto:ArtService1888@gmail.com">ArtService1888@gmail.com</a></p>
-                            <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">г. Киев, ул. Берестейський проспект, 99/1</a></p>
+                            <p>{t('footer.address')}: <a href="https://maps.app.goo.gl/TCLfVMq9PY1ypnJa7">{t('footer.adress')}</a></p>
                             <h2 className="title-2">{t('footer.working_hours')}</h2>
                             <p>{t('footer.monday_friday')}: 09:00–19:00</p>
                             <p>{t('footer.saturday')}: 12:00–15:00</p>
@@ -83,7 +83,7 @@ const Footer = () => {
                     </div>
                     <ul className='social-list'>
                                 <li className='social-list__item'>
-                                    <a className='social-list__link' href='https://www.instagram.com/art_service111/'>
+                                    <a className='social-list__link' href='https://www.instagram.com/art_service_kyiv?igsh=MXBpbmt1d2VvbWdr&utm_source=qr'>
                                         <img src={logoInsta} width={25} alt={t('footer.contacts')} />
                                     </a>
                                 </li>

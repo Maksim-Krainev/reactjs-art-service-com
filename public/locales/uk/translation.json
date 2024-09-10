@@ -27,7 +27,8 @@
     "address": "Адреса",
     "about": "Про нас",
     "navigation": "Навігація",
-    "home": "Головна"
+    "home": "Головна",
+    "adress": "м. Київ, Берестейський проспект, 99/1"
   },
   "counters": {
     "rated_us": "Нас оцінили",
@@ -81,8 +82,8 @@
     "tablets_repair": "Ремонт Планшетів",
     "phones_repair": "Ремонт телефонів",
     "repair_airmak": "Ремонт Apple iMac",
-    "repair_mac": "Ремонт Apple MacBook",
-    "repair_iphone": "Ремонт Iphone",
+    "repair_mac": "Ремонт  MacBook",
+    "repair_iphone": "Ремонт iPhone",
     "repair_smart-whach": "Ремонт Apple Watch"
   },
   "welcome": "Добро пожаловать",

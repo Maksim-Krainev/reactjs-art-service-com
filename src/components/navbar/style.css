@@ -1,7 +1,7 @@
 /* Nav */
 
 .nav {
-	padding: 20px;
+	padding: 10px;
 	background-color: var(--nav-bg);
 	border-bottom: 1px solid var(--nav-border);
 	color: var(--nav-text);
@@ -16,9 +16,11 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	column-gap: 30px;
-	row-gap: 20px;
-	flex-wrap: wrap;
+	column-gap: 20px;
+	row-gap: 10px;
+	flex-wrap: nowrap;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -33,14 +35,16 @@
 }
 
 .nav-list {
-	display: flex;
-	flex-wrap: wrap;
-	row-gap: 10px;
-	align-items: center;
-	column-gap: 40px;
-	font-size: 16px;
-	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+  gap: 5px; /* Відстань між елементами */
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-list > * {
+  flex: 1 1 calc(33.333% - 10px); /* Ширина кожного елемента */
 }
 
 .nav-list__link {
@@ -78,8 +82,9 @@
 	display: none;
 }
 
-.nav-list__item a{ 
+.nav-row a{ 
 	color:  white;
+  flex-wrap: nowrap;
 }
 
 .nav-logo-phone:hover{
@@ -140,6 +145,11 @@
   flex-direction: row-reverse;
 }
 
+.naw-row-phone-link{
+  display: flex;
+  align-items: center;
+}
+
 .nav-mobile-icon-button,
 .nav-mobile-icon-link {
   background: none;
@@ -180,6 +190,7 @@
 }
 
   @media (max-width: 821px) {
+   
     .nav-list {
         display: none;
     }
@@ -225,6 +236,7 @@
   .pk_phone{
     display: none;
   }
+ 
 
   .nav-list__item-mobile {
     display: block;

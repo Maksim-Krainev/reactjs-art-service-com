@@ -41,8 +41,7 @@ const Navbar = () => {
 
     return (
         <nav className="nav">
-            <div className="container">
-                <div className="nav-row">
+            <div className="nav-row">
                     <NavLink to="/" className="logo" onClick={handleLogoClick}>
                         <img src={NavLogo} className='nav-logo' alt={t('logo_alt')} />
                     </NavLink>
@@ -77,18 +76,6 @@ const Navbar = () => {
                                         </li>                    
                     <li className="nav-list__item nav-list__item-phone ">
                                             <NavLink
-                                                to="/repair_computer"
-                                                className={({ isActive }) =>
-                                                    isActive ? activeLink : normalLink
-                                                }
-                                                onClick={closeMenu} 
-                                            >
-                                                {t('repair_computers')}
-                                            </NavLink>
-                                        </li>
-                                        
-                                        <li className="nav-list__item nav-list__item-phone">
-                                            <NavLink
                                                 to="/repair_phone"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink
@@ -98,8 +85,9 @@ const Navbar = () => {
                                                 {t('repair_phones')}
                                             </NavLink>
                                         </li>
+                                        
                                         <li className="nav-list__item nav-list__item-phone">
-                                            <NavLink
+                                        <NavLink
                                                 to="/repair_smartphones"
                                                 className={({ isActive }) =>
                                                     isActive ? activeLink : normalLink
@@ -109,6 +97,52 @@ const Navbar = () => {
                                                 {t('repair_smartphones')}
                                             </NavLink>
                                         </li>
+                                        <li className="nav-list__item nav-list__item-phone">
+                                        <NavLink
+                                                to="/repair_computer"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('repair_computers')}
+                                            </NavLink>
+                                            
+                                        </li>
+                                        <li className="nav-list__item nav-list__item-phone">
+                                        <NavLink
+                                                to="/repair_mack"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_mac')}
+                                            </NavLink>
+                                        </li>
+                                        <li className="nav-list__item nav-list__item-phone">
+                                        <NavLink
+                                                to="/repair_iphone"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_iphone')}
+                                            </NavLink>
+                                        </li>
+                                        <li className="nav-list__item nav-list__item-phone">
+                                        <NavLink
+                                                to="/repair_smartwhatch"
+                                                className={({ isActive }) =>
+                                                    isActive ? activeLink : normalLink
+                                                }
+                                                onClick={closeMenu} 
+                                            >
+                                                {t('project.repair_smart-whach')}
+                                            </NavLink>
+                                        </li>
+                                        
                                         {/* <li className=" nav-list__item-phone phone-menu">
                                             <NavLink
                                                 to="/repair_imac"
@@ -131,39 +165,8 @@ const Navbar = () => {
                                                 {t('project.repair_mac')}
                                             </NavLink>
                                         </li>
-                                        <li className=" nav-list__item-phone phone-menu">
-                                            <NavLink
-                                                to="/repair_iphone"
-                                                className={({ isActive }) =>
-                                                    isActive ? activeLink : normalLink
-                                                }
-                                                onClick={closeMenu} 
-                                            >
-                                                {t('project.repair_iphone')}
-                                            </NavLink>
-                                        </li>
-                                        <li className=" nav-list__item-phone phone-menu">
-                                            <NavLink
-                                                to="/repair_smartwhatch"
-                                                className={({ isActive }) =>
-                                                    isActive ? activeLink : normalLink
-                                                }
-                                                onClick={closeMenu} 
-                                            >
-                                                {t('project.repair_smart-whach')}
-                                            </NavLink>
-                                        </li>
-                                        <li className=" nav-list__item-phone phone-menu">
-                                            <NavLink
-                                                to="/about"
-                                                className={({ isActive }) =>
-                                                    isActive ? activeLink : normalLink
-                                                }
-                                                onClick={closeMenu} 
-                                            >
-                                                {t('footer.about')}
-                                            </NavLink>
-                                        </li>
+                                       
+                                       
                                         <li className=" nav-list__item-phone phone-menu">
                                         <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center', color: '#fff', marginTop: '50px', fontSize: '20px'}}>
                                 <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={25} style={{ marginRight: '5px' }}/> {t('phone_number')}
@@ -172,7 +175,7 @@ const Navbar = () => {
                                         <li className=" nav-list__item-phone phone-menu">
                                         <ul className='social-list'>
                                 <li className='social-list__item'>
-                                    <a className='social-list__link' href='https://www.instagram.com/art_service111/'>
+                                    <a className='social-list__link' href='https://www.instagram.com/art_service_kyiv?igsh=MXBpbmt1d2VvbWdr&utm_source=qr'>
                                         <img src={logoInsta} width={25} alt={t('footer.contacts')} />
                                     </a>
                                 </li>
@@ -193,16 +196,18 @@ const Navbar = () => {
                                 </li>
                             </ul>
                                         </li>
-                        <li className="nav-list__item pk_phone">
+                        {/* <li className="nav-list__item pk_phone">
                             <a href="tel:+380507685111" style={{ display: 'flex', alignItems: 'center' }}>
                                 <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={15} style={{ marginRight: '5px' }}/> {t('phone_number')}
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
 
                     <LanguageSwitcher />
+                    <a href="tel:+380507685111" className='naw-row-phone-link pk_phone'>
+                                <img src={NavPhoneBtn} className='nav-logo-phone' alt={t('phone_alt')} width={15} style={{ marginRight: '5px' }}/> {t('phone_number')}
+                    </a>
                 </div>
-            </div>
         </nav>
     );
 };
